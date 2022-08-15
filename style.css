@@ -1,0 +1,89 @@
+.txt{
+  width: 100%;
+  padding: 12px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: rgb(245, 245, 117);
+  color: black;
+  font-size: 20px;
+}
+.but{
+  border-radius: 20px;
+  border-color: rgb(45, 60, 143);
+  color: rgb(211, 218, 224);
+  background-color: rgb(202, 12, 155);
+  padding: 12px 12px;
+ margin: 12px 2px;
+  border:0.5in;
+  cursor: pointer;
+  width: 20%;
+  opacity: 2;
+  line-break: auto;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+h1{
+  color: rgb(199, 192, 206) ;
+  text-shadow: rgb(189, 177, 211);
+}
+.foot{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(180, 78, 5);
+}
+.cop{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.phone{
+right: 10%;
+bottom: 5%;
+width: 10%;
+background-color: blue;
+border-radius: 10px;
+border-color: aliceblue;
+color: aliceblue;
+}
+.eml{
+  left: 2%;
+left: 10%;
+bottom: 5%;
+width: 10%;
+background-color: blue;
+border-radius: 10px;
+border-color: white;
+color: aliceblue;
+} 
+.homee{
+    width: 100%;
+    height:580px;
+    background-image: url(download.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid rgb(180, 91, 91);
+    background-color: rgb(180, 78, 5);
+}
+.hm{
+  text-shadow: rgb(211, 184, 205);
+  text-align: right;
+  text-decoration: double;
+  text-rendering: optimizeSpeed;
+  color: white;
+font-size: 200px;
+font-weight: bolder;
+font-style: italic;
+}
+.links{
+  width: 100%;
+  font-size: 30px;
+  color: rgb(247, 235, 235);
+  right: 0;
+}
