@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-300">
+    <header class="bg-purple-500 fixed h-10 py-10 w-screen flex justify-center items-center ">
+<nav class="flex justify-between items-center px-2 py-2 w-full">
+   <div class="font-3xl text-white text-3xl">𝓙𝓸𝓫𝓼</div>
+   <input type="search" class="w-2/3 sm:w-2/6 sm:py-1 px-5 font-300 rounded-2xl focus:outline-none" placeholder="search jobs...">
+   <div class="sm:hidden font-600 text-3xl text-white hover:bg-purple-300 w-10 h-10 text-center" id="menu">  &#8942;</div> 
+   <div class="hidden font-medium sm:flex justify-between items-center w-1/2">
+<a href="#jobs" class="hover:bg-purple-300  w-2xl text-white h-xl decoration-none min-w-32 h-10 pt-2 overflow-hidden text-center rounded-xl">Jobs Available </a>
+<a href="#community" class="hover:bg-purple-300 font-medium text-white  decoration-none w-24 h-10 pt-2 text-center rounded-xl">Community</a>
+<a href="#jobs" class="hover:bg-purple-300  decoration-none w-20 h-10 pt-2 text-center rounded-xl text-white">Contact</a>
+<a href="signup.html" class="hover:bg-purple-300 sm:hidden md:block  decoration-none text-blue-500 rounded-xl w-20 h-10 pt-2 text-center  bg-white">Logout</a>
+<a href="#jobs" class="decoration-none mr-2">
+    <img src="assets/image.jpg" alt="" class="h-10 rounded-3xl w-10">
+<p class="text-sm  underline">profile</p>
+</a>
+</div>
+</nav>
+    </header>
+  <main class=" mt-20 flex flex-col text-white justify-between items-center sm:grid">
+    <section class="bg-purple-500 h-40 my-10 w-5/6 rounded-xl sm:my-5 sm:min-h-60 sm:min-w-2/3">
+<div class="flex justify-center">
+    <p class="font-medium text-4xl text-slate-400">1000+</p>
+    <p class="mt-2 ml-3 text-2xl">available jobs</p>
+</div>
+<p class="ml-5 my-5 text-10 font-medium  ">Min-salary:  $20-$30 per hour</p>
+<div class="flex justify-center"><a href="" class=" mr-1 text-blue-600  text-10 rounded-2xl p-1 bg-white ">click here</a><p class="sm:hidden">to browse Jobs</p> </div>    
+</section>
+<section class="bg-purple-500 h-40 my-10 w-5/6 rounded-xl">
+    <div class="flex justify-center">
+        <p class="font-medium text-4xl text-slate-400">1000+</p>
+        <p class="mt-2 ml-3 text-2xl">people joined</p>
+    </div>
+    <p class="ml-5 my-5 text-10 font-medium  ">Join our community to help you find jobs</p>
+    <div class="flex justify-center"><a href="" class="text-blue-600  text-10 rounded-2xl p-1 bg-white">click here</a><p class="sm:hidden">to join community</p> </div>    
+    </section>
+    <section class="bg-purple-500 h-40 my-10 w-5/6 rounded-xl">
+        <div class="flex justify-center">
+            <p class="font-medium text-4xl text-slate-400">Get a Job Done</p>
+        </div>
+        <p class="ml-5 my-5 text-10 font-medium  ">Reliable  services</p>
+        <div class="flex justify-center"><a href="" class="text-blue-600  text-10 rounded-2xl p-1 bg-white">click here</a><p class="ml-2 sm:hidden">to send us an email</p></div>    
+        </section>
+        <section class="bg-purple-500 h-40 my-10 w-5/6 rounded-xl">
+            <div class="flex justify-center">
+                <p class="font-medium text-4xl text-slate-400">Help??</p>
+            </div>
+            <p class="ml-5 my-5 text-10 font-medium  ">contact our customer service</p>
+            <div class="flex justify-center"><a href="" class="text-blue-600  text-10 rounded-2xl p-1 bg-white">click here</a><p class="ml-2 sm:hidden">to send us an email</p></div>    
+            </section>
+  </main>
+
+  <footer class="w-full h-10 bg-slate-400 text-center py-2 mt-auto">copyright &copy;2022</footer>
+  <section class="start  justify-center items-center">
+   <div class="text-center items-center flex-col text-white  flex justify-center mt-10 text-3xl sm:text-5xl"><div> WELCOME!!!</div><img src="assets/image.jpg" class="h-20 w-20  mt-5 sm:h-"><div id="name" class="ml-5">Name</div></div>
+   <p class="text-white mt-20 sm:text-3xl p-10">You are one step away from getting hired or Getting a job done</p>
+
+   <div id="getstart" class="my-auto  flex items-center justify-center rounded-3xl  text-white bg-purple-600 h-10 w-40 sm:h-20 sm:w-40">GET STARTED</div>
+  </section>
+  <section class="menu fixed min-h-screen w-screen bg-black font-medium text-purple-600 flex flex-col gap-20 items-center text-2xl pt-10 hidden">
+    <div class="close h-10 w-10">&times</div>
+    <a href="#">Profile</a>
+    <a href="#">Signout</a>
+    <a href="#">community</a>
+    <a href="#">Services</a>
+    <a href="#">Report a problem</a>
+  </section>
+  <script>
+    data=JSON.parse(localStorage.getItem('user'));
+    const Name=document.getElementById('name');
+    if(Name.innerHTML.length>2){
+        Name.style.fontSize=25+'px';;
+   Name.style.paddingTop='1.5rem';
+    }
+   
+  const getStart=document.getElementById('getstart');
+  const startScreen=document.querySelector('.start');
+  getStart.onclick=()=>{
+    startScreen.style.display='none';
+  }
+  const close=document.querySelector('.close');
+  const menu=document.querySelector('.menu');
+  const menuBtn=document.querySelector('#menu');
+  menuBtn.onclick=()=>{
+    menu.style.display='flex';
+  }
+  close.style.cursor='pointer';
+  getStart.style.cursor='pointer';
+  menuBtn.style.cursor='pointer';
+  close.onclick=()=>{
+    menu.style.display='none';
+  }
+    if(data==null){
+    window.location='login.html';
+  }else{
+Name.innerHTML=data.$name;
+  }
+  
+  
+  </script>
+</body>
+</html>
