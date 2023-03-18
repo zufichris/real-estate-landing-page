@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-purple-500 flex fixed justify-center flex-col">
+    <div class=" text-5xl font-medium  text-blue-600 text-center">Login</div>
+    
+    <form enctype="multipart/form-data">
+       
+        <input type="email" id="email" placeholder="email" class="sm:w-1/3">
+        <input type="password" id="password" placeholder="password" class="sm:w-1/3">
+        <p id="p"></p>
+        <p class="p"></p>
+        <input type="submit" value="submit" id="submit" class="file h-10 w-40 bg-purple-300 text-white font-medium shadow-3xl">
+<div class="flex"><p class="mt-2 mx-2">Do not have an account??</p><a class="text-blue-500 h-10 w-20 bg-white text-center pt-2 rounded-2xl mb-5" href="signup.html">signup</a></div>    
+</form>
+
+<script>
+    const p2=document.querySelector('.p');
+    const p=document.getElementById('p');
+const password=document.getElementById('password');
+const email=document.getElementById('email');
+const submit=document.getElementById('submit');
+data= JSON.parse(localStorage.getItem('user'));
+submit.onclick=(e)=>{
+if(data.$email !=null){
+if(email.value==data.$email && password.value==data.$password){
+p2.innerHTML='Login successfull';
+p.style.display='none';
+setInterval(() => {
+    window.location='home.html';
+    
+},1000);
+}else{
+    p2.style.display='none';
+    p.innerHTML='wrong email or password';
+}
+console.log(email.value+data.$email)
+}
+e.preventDefault();
+}
+
+</script>
+</body>
+</html>
