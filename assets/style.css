@@ -22,6 +22,7 @@ form{
     justify-content: center;
     gap: 40px;
     align-items: center;
+    background :linear-gragient(to right,blue,silver,purple);
 }
 form input{
     width: 80%;
